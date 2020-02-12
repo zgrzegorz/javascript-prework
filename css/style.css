@@ -15,6 +15,11 @@
   padding: 20px 0;
 }
 
+.container #buttons button {
+  margin-left: 20px;
+  padding: 10px;
+}
+
 .container #messages {
   border: 2px solid black;
   padding: 20px 0;
