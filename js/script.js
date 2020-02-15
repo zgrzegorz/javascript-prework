@@ -10,9 +10,7 @@ playPaper.addEventListener("click", function () {
 playScissors.addEventListener("click", function () {
     playGame(3);
 });
-let resultComputer = 0;
-let resultPlayer = 0;
-let draw = 0;
+
 const playGame = function (argGame) {
 
     const clearMessages = function () {
@@ -74,22 +72,6 @@ const playGame = function (argGame) {
         console.log('moves:', argComputerMove, argPlayerMove);
     }
 
-    const resultGame = function () {
-        if (result == "Komputer wygrywa!") {
-            resultComputer = resultComputer + 1;
-            const resultResult = document.getElementById("result");
-            resultResult.innerHTML = "Komputera ma " + resultComputer + " punkty";
-        } else if (result == "Ty wygrywasz!") {
-            resultPlayer += 1;
-            const resultResult = document.getElementById("result");
-            resultResult.innerHTML = "Gracz ma " + resultPlayer + " punkty";
-        } else {
-            draw += 1;
-            const resultResult = document.getElementById("result");
-            resultResult.innerHTML = "Remis " + draw + " punkty";
-        }
-    }
-
     const printMessage = function (msg) {
         const div = document.createElement("div");
         div.innerHTML = msg;
@@ -98,7 +80,7 @@ const playGame = function (argGame) {
 
     let result = displayResult(computerMove, playerMove);
     printMessage(result);
-    resultGame();
+
 }
 
 
