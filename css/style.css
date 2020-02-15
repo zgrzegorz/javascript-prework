@@ -22,6 +22,13 @@
 
 .container #messages {
   border: 2px solid black;
+  margin-top: 5px;
+  padding: 20px 0;
+}
+
+.container #result {
+  border: 2px solid green;
+  margin-top: 5px;
   padding: 20px 0;
 }
 /*# sourceMappingURL=style.css.map */
